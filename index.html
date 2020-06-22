@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>bobby.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="bobby-top">
+  <div class="bobby-bar bobby-black bobby-card">
+    <a class="bobby-bar-item bobby-button bobby-padding-large bobby-hide-medium bobby-hide-large bobby-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bobby-bar-item bobby-button bobby-padding-large">HOME</a>
+    <a href="#band" class="bobby-bar-item bobby-button bobby-padding-large bobby-hide-small">BAND</a>
+    <a href="#tour" class="bobby-bar-item bobby-button bobby-padding-large bobby-hide-small">TOUR</a>
+    <a href="#contact" class="bobby-bar-item bobby-button bobby-padding-large bobby-hide-small">CONTACT</a>
+    <div class="bobby-dropdown-hover bobby-hide-small">
+      <button class="bobby-padding-large bobby-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="bobby-dropdown-content bobby-bar-block bobby-card-4">
+        <a href="#" class="bobby-bar-item bobby-button">Merchandise</a>
+        <a href="#" class="bobby-bar-item bobby-button">Extras</a>
+        <a href="#" class="bobby-bar-item bobby-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="bobby-padding-large bobby-hover-red bobby-hide-small bobby-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="bobby-bar-block bobby-black bobby-hide bobby-hide-large bobby-hide-medium bobby-top" style="margin-top:46px">
+  <a href="#band" class="bobby-bar-item bobby-button bobby-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="bobby-bar-item bobby-button bobby-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="bobby-bar-item bobby-button bobby-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="bobby-bar-item bobby-button bobby-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="bobby-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides bobby-display-container bobby-center">
+    <img src="bg1.jpg" style="width:100%">
+    <div class="bobby-display-bottommiddle bobby-container bobby-text-white bobby-padding-32 bobby-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides bobby-display-container bobby-center">
+    <img src="bg2.jpg" style="width:100%">
+    <div class="bobby-display-bottommiddle bobby-container bobby-text-white bobby-padding-32 bobby-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides bobby-display-container bobby-center">
+    <img src="bg3.jpg" style="width:100%">
+    <div class="bobby-display-bottommiddle bobby-container bobby-text-white bobby-padding-32 bobby-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="bobby-container bobby-content bobby-center bobby-padding-64" style="max-width:800px" id="band">
+    <h2 class="bobby-wide">Template Band Website</h2>
+    <p class="bobby-opacity"><i>We love music</i></p>
+    <p class="bobby-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="bobby-row bobby-padding-32">
+      <div class="bobby-third">
+        <p>Name</p>
+        <img src="man1.jpg" class="bobby-round bobby-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="bobby-third">
+        <p>Name</p>
+        <img src="woman1.jpeg" class="bobby-round bobby-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="bobby-third">
+        <p>Name</p>
+        <img src="man2.jpg" class="bobby-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="bobby-black" id="tour">
+    <div class="bobby-container bobby-content bobby-padding-64" style="max-width:800px">
+      <h2 class="bobby-wide bobby-center">TOUR DATES</h2>
+      <p class="bobby-opacity bobby-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="bobby-ul bobby-border bobby-white bobby-text-grey">
+        <li class="bobby-padding">September <span class="bobby-tag bobby-red bobby-margin-left">Sold out</span></li>
+        <li class="bobby-padding">October <span class="bobby-tag bobby-red bobby-margin-left">Sold out</span></li>
+        <li class="bobby-padding">November <span class="bobby-badge bobby-right bobby-margin-right">3</span></li>
+      </ul>
+
+      <div class="bobby-row-padding bobby-padding-32" style="margin:0 -16px">
+        <div class="bobby-third bobby-margin-bottom">
+          <img src="bg4.jpg" alt="New York" style="width:100%" class="bobby-hover-opacity">
+          <div class="bobby-container bobby-white">
+            <p><b>New York</b></p>
+            <p class="bobby-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="bobby-button bobby-black bobby-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="bobby-third bobby-margin-bottom">
+          <img src="bg5.jpg" alt="Paris" style="width:100%" class="bobby-hover-opacity">
+          <div class="bobby-container bobby-white">
+            <p><b>Paris</b></p>
+            <p class="bobby-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="bobby-button bobby-black bobby-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="bobby-third bobby-margin-bottom">
+          <img src="bg2.jpg" alt="San Francisco" style="width:100%" class="bobby-hover-opacity">
+          <div class="bobby-container bobby-white">
+            <p><b>San Francisco</b></p>
+            <p class="bobby-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="bobby-button bobby-black bobby-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="bobby-modal">
+    <div class="bobby-modal-content bobby-animate-top bobby-card-4">
+      <header class="bobby-container bobby-teal bobby-center bobby-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="bobby-button bobby-teal bobby-xlarge bobby-display-topright">×</span>
+        <h2 class="bobby-wide"><i class="fa fa-suitcase bobby-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="bobby-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="bobby-input bobby-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="bobby-input bobby-border" type="text" placeholder="Enter email">
+        <button class="bobby-button bobby-block bobby-teal bobby-padding-16 bobby-section bobby-right">PAY <i class="fa fa-check"></i></button>
+        <button class="bobby-button bobby-red bobby-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="bobby-right">Need <a href="#" class="bobby-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="bobby-container bobby-content bobby-padding-64" style="max-width:800px" id="contact">
+    <h2 class="bobby-wide bobby-center">CONTACT</h2>
+    <p class="bobby-opacity bobby-center"><i>Fan? Drop a note!</i></p>
+    <div class="bobby-row bobby-padding-32">
+      <div class="bobby-col m6 bobby-large bobby-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="bobby-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="bobby-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="bobby-half">
+              <input class="bobby-input bobby-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="bobby-half">
+              <input class="bobby-input bobby-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="bobby-input bobby-border" type="text" placeholder="Message" required name="Message">
+          <button class="bobby-button bobby-black bobby-section bobby-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="bg1.jpg" class="bobby-image bobby-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="bobby-container bobby-padding-64 bobby-center bobby-opacity bobby-light-grey bobby-xlarge">
+  <i class="fa fa-facebook-official bobby-hover-opacity"></i>
+  <i class="fa fa-instagram bobby-hover-opacity"></i>
+  <i class="fa fa-snapchat bobby-hover-opacity"></i>
+  <i class="fa fa-pinterest-p bobby-hover-opacity"></i>
+  <i class="fa fa-twitter bobby-hover-opacity"></i>
+  <i class="fa fa-linkedin bobby-hover-opacity"></i>
+  <p class="bobby-medium">Powered by <a href="https://www.bobbyschools.com/bobbycss/default.asp" target="_blank">bobby.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("bobby-show") == -1) {
+    x.className += " bobby-show";
+  } else { 
+    x.className = x.className.replace(" bobby-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
